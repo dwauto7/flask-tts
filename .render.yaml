@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: my-voice-tts
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn server:app
+    autoDeploy: true
